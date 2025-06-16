@@ -1,9 +1,13 @@
 # PersonaEditor
 
-[Last Release](https://github.com/Meloman19/PersonaEditor/releases/latest)
+This fork mainly aids in translating P4G into Vietnamese, and also a minor bug that no one cares about but I still want to fix.
 
-## Supported File Types
+**Textbox name label fix:**
+|**Before**|**After**|
+| :-----------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
+| ![Before](./images/P4G_ykDhyWn7ul.jpg) | ![After](./images/P4G_hSS2i85atz.jpg) |
 
-* Container: BIN (BIN, PAK, PAC, P00, ARC); PM1; BF; BVP; TBL; FTD (FTD, CTD, TTD)
-* Graphic: FNT; SPR; TMX; SPD; DDS
-* Text: BMD (BMD, MSG); PTP
+**More prefix (not pushed):**
+
+- {DBR} to disable auto line break for the line you type this in.
+- {HEL} better auto line break for HELP msgs.

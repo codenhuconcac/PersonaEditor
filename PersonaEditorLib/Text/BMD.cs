@@ -205,8 +205,8 @@ namespace PersonaEditorLib.Text
                 {
                     LastBlock.Add((int)MS.Position);
                     writer.Write(MSG_offset);
-                    if (name.NameBytes.Length == 0)
-                        MSG_offset += 2;
+                    if (name.NameBytes.Length == 0 || (name.NameBytes[0] == 0x20))
+                        MSG_offset += 3;
                     else
                         MSG_offset += name.NameBytes.Length + 1;
                 }
@@ -217,8 +217,11 @@ namespace PersonaEditorLib.Text
 
                 foreach (var name in Name)
                 {
-                    if (name.NameBytes.Length == 0)
-                        writer.Write((byte)0x20);
+                    if (name.NameBytes.Length == 0 || (name.NameBytes[0] == 0x20))
+                    {
+                        writer.Write((byte)0x80);
+                        writer.Write((byte)0x80);
+                    }
                     else
                         writer.Write(name.NameBytes);
                     writer.Write((byte)0);
