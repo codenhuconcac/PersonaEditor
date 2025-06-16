@@ -1,6 +1,6 @@
 # PersonaEditor
 
-This fork mainly aids in translating P4G into Vietnamese, and also a minor bug that no one cares about but I still want to fix.
+This fork mainly aids in translating P4G into Vietnamese, and also fix a minor bug that no one cares about but I still want to fix.
 
 **Textbox name label fix:**
 |**Before**|**After**|
